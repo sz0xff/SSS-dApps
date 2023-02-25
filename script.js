@@ -4,5 +4,5 @@ const address = symbol.Address.createFromRawAddress("TCHPDXHGRAAL6HFRHDVFXKTFXOA
 
 console.log("Hallo Symbol")
 
-console.log('Your Address: ${address.plain()}')
+console.log(`Your Address: ${address.plain()}`)
 
