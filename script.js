@@ -11,6 +11,8 @@ dom_addr.innerText = address.pretty()
 
 console.log(address.pretty())
 
+console.log("test")
+
 //testnet information
 const GENERATION_HASH = '7FCCD304802016BEBBCD342A332F91FF1F3BB5E902988B352697BE245F48E836'
 const EPOCH = 1637848847
