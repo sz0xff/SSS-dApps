@@ -24,7 +24,7 @@ const accountHttp = repositoryFactory.createAccountRepository()
 
 accountHttp.getAccountInfo(address)
   .toPromise()
-  .then(accountInfo) => {
+  .then((accountInfo) => {
     for(let m of accountInfo.mosaics){
       if(m.id.id.toHex() === XYM_ID) {
         const dom_xym = dom.getElementById('wallet-xym')
