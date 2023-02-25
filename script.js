@@ -6,3 +6,5 @@ console.log("Hallo Symbol")
 
 console.log(`Your Address: ${address.plain()}`)
 
+const dom_addr = document.getElementById('wallet-addr')
+dom_addr.innerText = address.pretty()
