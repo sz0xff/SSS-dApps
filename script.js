@@ -1,5 +1,4 @@
 const symbol = require('/node_modules/symbol-sdk')
-
 const address = symbol.Address.createFromRawAddress("TCHPDXHGRAAL6HFRHDVFXKTFXOA7TI7IP4NEFZA")
 
 console.log("Hallo Symbol")
@@ -12,7 +11,7 @@ dom_addr.innerText = address.pretty()
 
 console.log(address.pretty())
 
-#testnet information
+//testnet information
 const GENERATION_HASH = '7FCCD304802016BEBBCD342A332F91FF1F3BB5E902988B352697BE245F48E836'
 const EPOCH = 1637848847
 const XYM_ID = '3A8416DB2D53B6C8'
