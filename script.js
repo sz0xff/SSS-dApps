@@ -32,14 +32,14 @@ function LoadSSS(){
     console.log(myAddress);  
 
     (async() =>{
-      const accountInfo = await accountRepo.getAccountInfo(myAddress).toPromise() ;
+      const accountInfo = await accountRepo.getAccountInfo(myAddress).toPromise();
       console.log(accounInfo);
 
       const result = await txRepo.search(
         {
           group:sym.TransactionGroup.Confirmed,
           embedded:true,
-          address:myAddoress
+          address:myAddress
         }
       ).toPromise();
 
