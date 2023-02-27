@@ -22,9 +22,9 @@ function LoadSSS(){
 
   if(JSON.stringify(window.isAllowedSSS()))
   {
-    console.log('SSS is OK');
+    console.log('SSS is Allowed');
   }else{
-    console.log('SSS is NO');
+    console.log('SSS is NOT Allowed');
   }
 
 }
