@@ -33,7 +33,7 @@ function LoadSSS(){
 
     (async() =>{
       const accountInfo = await accountRepo.getAccountInfo(myAddress).toPromise();
-      console.log(accounInfo);
+      console.log(accountInfo);
 
       const result = await txRepo.search(
         {
