@@ -19,4 +19,6 @@ function LoadSSS(){
 
   console.log(address);
   console.log(addressPretty);
+
+  console.log(window.SSS);
 }
