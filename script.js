@@ -26,7 +26,7 @@ function LoadSSS(){
 
     const address = window.SSS.activeAddress;
     (async() =>{
-      const accountInfo = accountRepo.getAccountInfo(address);
+      const accountInfo = await accountRepo.getAccountInfo(address).toPromise() ;
       console.log(accounInfo);
     })();
 
