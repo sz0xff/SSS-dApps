@@ -10,13 +10,13 @@ const repositoryFactory = new symbol.RepositoryFactoryHttp(NODE_URL)
 const accountHttp = repositoryFactory.createAccountRepository()
 const transactionHttp = repositoryFactory.createTransactionRepository()
 
-setTimeout(() => {
-  
-const address = symbol.Address.createFromRawAddress(window.SSS.activeAddress)
-const addressPretty = address.pretty();
 
-console.log(address);
-console.log(addressPretty);
+function LoadSSS(){
+  console.log('LoadSSS');
 
-},500);
+  const address = symbol.Address.createFromRawAddress(window.SSS.activeAddress);
+  const addressPretty = address.pretty();
 
+  console.log(address);
+  console.log(addressPretty);
+}
