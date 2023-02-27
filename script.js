@@ -9,7 +9,7 @@ const NET_TYPE = sym.NetworkType.TEST_NET;
 
 const repo = new sym.RepositoryFactoryHttp(NODE_URL);
 const accountRepo = repo.createAccountRepository();
-const tsRepo = repo.createTransactionRepository();
+const txRepo = repo.createTransactionRepository();
 
 
 function LoadSSS(){
