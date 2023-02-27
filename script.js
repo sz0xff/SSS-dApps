@@ -7,9 +7,9 @@ const XYM_ID = '3A8416DB2D53B6C8'
 const NODE_URL = 'https://sym-test.opening-line.jp:3001'
 const NET_TYPE = symbol.NetworkType.TEST_NET
 
-const repositoryFactory = new symbol.RepositoryFactoryHttp(NODE_URL)
-const accountHttp = repositoryFactory.createAccountRepository()
-const transactionHttp = repositoryFactory.createTransactionRepository()
+const repo = new symbol.RepositoryFactoryHttp(NODE_URL)
+const accountRepo = repo.createAccountRepository()
+const tsRepo = repo.createTransactionRepository()
 
 
 function LoadSSS(){
@@ -25,12 +25,8 @@ function LoadSSS(){
     console.log('SSS is Allowed');
 
     const address = window.SSS.activeAddress;
-
-    accountHttp.getAccountInfo(address)
-      .toPromise()
-      .then(
-        console.log(accountInfo);
-      );
+    const accountInfo = await accounRepo.getAccountInfo(address).toPromise();
+    console.log(accounInfo);
 
   }else{
     console.log('SSS is NOT Allowed');
