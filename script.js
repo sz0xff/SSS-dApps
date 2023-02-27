@@ -25,7 +25,7 @@ function LoadSSS(){
     console.log('SSS is Allowed');
 
     const address = window.SSS.activeAddress;
-    const accountInfo = await accounRepo.getAccountInfo(address).toPromise();
+    const accountInfo = await accountRepo.getAccountInfo(address).toPromise();
     console.log(accounInfo);
 
   }else{
