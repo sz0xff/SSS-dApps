@@ -16,9 +16,11 @@ function LoadSSS(){
   console.log('LoadSSS');
 
   console.log(JSON.stringify(window.SSS));
+  console.log(window.SSS);
+
   console.log(JSON.stringify(window.isAllowedSSS()));
 
-  if(window.isAllowdSSS())
+  if(JSON.stringify(window.isAllowdSSS()))
   {
     console.log('SSS is OK');
   }else{
