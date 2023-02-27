@@ -20,7 +20,7 @@ function LoadSSS(){
 
   console.log(JSON.stringify(window.isAllowedSSS()));
 
-  if(JSON.stringify(window.isAllowdeSSS()))
+  if(JSON.stringify(window.isAllowedSSS()))
   {
     console.log('SSS is OK');
   }else{
