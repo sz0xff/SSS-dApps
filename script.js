@@ -15,5 +15,6 @@ const transactionHttp = repositoryFactory.createTransactionRepository()
 function LoadSSS(){
   console.log('LoadSSS');
 
-  console.log(window.SSS);
+  console.log(JSON.stringify(window.SSS));
+  console.log(JSON.stringify(window.isAllowSSS());
 }
