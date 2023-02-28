@@ -45,15 +45,20 @@ function LoadSSS(){
 
       txes = result.data;
       console.log(txes);
+
       txes.forEach(tx =>{
         console.log(tx);
       });
 
+      // await Promise.all(txes.map(async tx =>{
+      //   const txInfo = await txRepo.getTransaction(tx['transactionInfo']['hash'],sym.TransactionGroup.Confirmed).toPromise();
+      //   console.log(tx['transactionInfo']['hash']);
+      //   console.log(txInfo);
+        
+      // }));
+
 
     })();
-
-
-
 
 
   }else{
