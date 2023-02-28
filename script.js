@@ -44,6 +44,7 @@ function LoadSSS(){
       ).toPromise();
 
       txes = result.data;
+      console.log(txes);
       txes.forEach(tx =>{
         console.log(tx);
       });
