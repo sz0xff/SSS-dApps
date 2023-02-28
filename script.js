@@ -46,11 +46,9 @@ function LoadSSS(){
       txes = result.data;
       console.log(txes);
       txes.forEach(tx =>{
-        console.log(tx);
+        console.log(tx[1]);
       });
     })();
-
-
 
 
 
